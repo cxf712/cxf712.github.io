@@ -3,9 +3,9 @@ layout: page
 title: Python 系列文章
 titlebar: python
 subtitle: Talk is cheap,show me the code
-menu: spring-cloud
+menu: python
 css: ['blog-page.css']
 permalink: /python
 keywords: Python
 ---
-{% include spring-cloud.html %}
+{% include python.html %}
