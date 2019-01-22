@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Natural Language Processing 系列文章
+title: Natural Language Processing
 titlebar: nlp
 menu: nlp
 css: ['blog-page.css']
