@@ -5,7 +5,7 @@ titlebar: nlp
 menu: nlp
 css: ['blog-page.css']
 permalink: /nlp
-keywords: nlp,机器 学习,自然语言处理
+keywords: nlp,机器学习,自然语言处理
 ---
 
 {% include nlp.html %}
