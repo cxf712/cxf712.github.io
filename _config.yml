@@ -7,12 +7,12 @@
 
 # Site settings
 title:  cxf712
-subtitle: 分享技术，品味人生
+subtitle: Hello World
 name: cxf712
 description: 本站是cxf712的技术分享博客。
 keywords: 开发者,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,IT技术博客,Java,Python,
 encoding: "utf-8"
-favicon: favicon.png
+# favicon: favicon.png
 
 repository: cxf712/cxf712.github.io
 github_url: https://github.com/cxf712
@@ -60,7 +60,7 @@ navs:
 
 -
  href: /nlp.html
- label: nlp
+ label: NLP
 
 -
  href: /spring-cloud.html
