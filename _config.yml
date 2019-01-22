@@ -59,8 +59,8 @@ navs:
  label: Home
 
 -
- href: /NLP.html
- label: Natural-Language-Processing
+ href: /nlp.html
+ label: nlp
 
 -
  href: /spring-cloud.html
