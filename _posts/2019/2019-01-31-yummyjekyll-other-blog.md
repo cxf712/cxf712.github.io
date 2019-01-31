@@ -1,3 +1,10 @@
+---
+layout: post
+title: Yummy Jekyll Theme
+category: other
+tags: [other]
+---
+
 # Yummy Jekyll Theme
 
 一个简单的，基于Bootstrap的主题。特别是对于喜欢在网站上展示他们的项目并喜欢做笔记的开发人员。还有一些神奇的功能可供发现。 

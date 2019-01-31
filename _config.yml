@@ -87,30 +87,29 @@ navs:
 # labels. my blog key words
 labels:
 
--
- href: /share/2017/10/01/resource-sharing.html
- name: 资源
+#-
+# href: /share/2017/10/01/resource-sharing.html
+# name: 资源
 
 -
  href: /life.html
  name: 故事
 
 -
- href: /arch.html
- name: 架构
+ href: /other.html
+ name: 杂七杂八
 
--
- href: /jvm.html
- name: Jvm
-
--
- href: /fastdfs.html
- name: FastDFS
-
--
- href: /mongodb.html
- name: MongoDB
-
+#-
+# href: /jvm.html
+# name: Jvm
+#
+#-
+# href: /fastdfs.html
+# name: FastDFS
+#
+#-
+# href: /mongodb.html
+# name: MongoDB
 
 -
  href: /open-source.html
@@ -120,19 +119,19 @@ labels:
 classes:
 
 -
- href: /test.html
- name: 测试
- describe: 测试Yummy-Jekyll
-
--
  href: /life.html
  name: 我的故事
  describe: 生活就是故事，故事就是生活
 
 -
- href: /arch.html
- name: 架构师之路
- describe: 一个架构师的自我修养
+ href: /other.html
+ name: other
+ describe: 杂七杂八
+
+-
+ href: /test.html
+ name: 测试
+ describe: 测试Yummy-Jekyll
 
 #-
 # href: /jvm.html
