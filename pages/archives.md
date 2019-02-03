@@ -2,7 +2,7 @@
 layout: page
 title: All articles are here
 titlebar: archives
-subtitle: <span class="mega-octicon octicon-calendar"></span>&nbsp;&nbsp;专题系列： &nbsp;&nbsp; <a href ="https://cxf712.github.io/nlp.html"><font color="#1A0DAB">NLP</font></a>&nbsp;&nbsp; <a href ="http://www.ityouknow.com/life.html"><font color="#EB9439">故事</font></a>&nbsp;&nbsp; <a href ="https://cxf712.github.io/docker.html"><font color="#1E90FF">Python</font></a>
+subtitle: <span class="mega-octicon octicon-calendar"></span>&nbsp;&nbsp;专题系列： &nbsp;&nbsp; <a href ="https://cxf712.github.io/nlp.html"><font color="#1A0DAB">NLP</font></a>&nbsp;&nbsp; <a href ="https://cxf712.github.io/life.html"><font color="#EB9439">故事</font></a>&nbsp;&nbsp; <a href ="https://cxf712.github.io/python.html"><font color="#1E90FF">Python</font></a>
 menu: archives
 css: ['blog-page.css']
 permalink: /archives.html
