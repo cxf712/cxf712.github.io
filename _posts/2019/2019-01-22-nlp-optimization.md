@@ -252,10 +252,10 @@ $$
 
 **参考资料**  
 1.[https://www.cnblogs.com/qniguoym/p/8058186.html](https://www.cnblogs.com/qniguoym/p/8058186.html)  
-2.http://www.dataguru.cn/article-10174-1.html  
-3.https://zhuanlan.zhihu.com/p/22461594  
-4.https://zhuanlan.zhihu.com/p/22252270  
-5.https://blog.csdn.net/qq_35860352/article/details/80772142  
-6.https://www.jianshu.com/p/aebcaf8af76e  
-7.AdaDetla: An Adaptive Learning Rate Method  
-8.Adam: A Method for Stochastic Optimization  
+2.[http://www.dataguru.cn/article-10174-1.html](http://www.dataguru.cn/article-10174-1.html) 
+3.[https://zhuanlan.zhihu.com/p/22461594](https://zhuanlan.zhihu.com/p/22461594)  
+4.[https://zhuanlan.zhihu.com/p/22252270](https://zhuanlan.zhihu.com/p/22252270)  
+5.[https://blog.csdn.net/qq_35860352/article/details/80772142](https://blog.csdn.net/qq_35860352/article/details/80772142)  
+6.[https://www.jianshu.com/p/aebcaf8af76e](https://www.jianshu.com/p/aebcaf8af76e)  
+7.[AdaDetlad论文] (https://arxiv.org/abs/1212.5701)  
+8.[Adam论文] (https://arxiv.org/abs/1412.6980v8)  
