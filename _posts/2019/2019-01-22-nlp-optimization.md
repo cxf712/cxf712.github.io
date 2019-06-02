@@ -257,5 +257,5 @@ $$
 4.[https://zhuanlan.zhihu.com/p/22252270](https://zhuanlan.zhihu.com/p/22252270)  
 5.[https://blog.csdn.net/qq_35860352/article/details/80772142](https://blog.csdn.net/qq_35860352/article/details/80772142)  
 6.[https://www.jianshu.com/p/aebcaf8af76e](https://www.jianshu.com/p/aebcaf8af76e)  
-7.[AdaDetlad论文] (https://arxiv.org/abs/1212.5701)  
-8.[Adam论文] (https://arxiv.org/abs/1412.6980v8)  
+7.AdaDetlad论文:[https://arxiv.org/abs/1212.5701] (https://arxiv.org/abs/1212.5701)  
+8.Adam论文[https://arxiv.org/abs/1412.6980v8] (https://arxiv.org/abs/1412.6980v8)  
