@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 多文档阅读理解2
+title: 阅读理解(四):A Deep Cascade Model for Multi-Document Reading Comprehension
 category: nlp
 tags: [nlp]
 ---

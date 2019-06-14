@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 多文档阅读理解1
+title: 阅读理解(三):Multi-Passage Machine Reading Comprehension with Cross-Passage Answer Verification
 category: nlp
 tags: [nlp]
 ---
