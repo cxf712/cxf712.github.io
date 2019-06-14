@@ -1,3 +1,9 @@
+---
+layout: post
+title: elmo
+category: nlp
+tags: [nlp]
+---
 #  elmo
 ![avatar](../../assets/images/cxf_pic/elmo/elmo_pic0.jpg)
 ## 1. introduce
@@ -10,27 +16,27 @@ elmo表征是“深 ”的，它们是bilm所有中间层表征的函数，这�
 ## 2. elmo(Embeddings from Language Models)
 ### 2.1 Bidirectional language models
 给定一个长度为N的序列$(t_1,t_2,t_3......t_N)$ ,forward language model计算序列的概率公式如下：
-![elmo公式1](C:\Users\123\Desktop\learning\elmo_pic1.jpg)
+![avatar](../../assets/images/cxf_pic/elmo/elmo_pic1.jpg)
 
 常用的语言模型是使用用多层的LSTM，elmo的语言模型也采用了这种方式  
 假设输入层级LSTM的token $x_k$上下文无关表征为$x_k^{LM}$(通过word embedding或基于字的CNN得到)，在每一个位置k，每个LSTM输出的基于上下文的表征为$\overrightarrow{h}_{k,j}^{LM}$(j=1,2.....L)，最后利用顶层的输出$\overrightarrow{h}_{k,L}^{LM}$，通过sofamax来预测下一个token $x_{k+1}$
 
 同样地，backward LM的计算公式如下：
-![elmo公式2](C:\Users\123\Desktop\learning\elmo_pic2.jpg)
+![avatar](../../assets/images/cxf_pic/elmo/elmo_pic2.jpg)
 
 最后biLM的log likelihood表达式如下：
-![elmo公式3](C:\Users\123\Desktop\learning\elmo_pic3.jpg)
+![avatar](../../assets/images/cxf_pic/elmo/elmo_pic3.jpg)
 
 
 ### 2.2 elmo
 对于每一个token$x_k$,一个L层的biLM要计算2L+1个表征：
-![elmo公式4](C:\Users\123\Desktop\learning\elmo_pic4.jpg)
+![avatar](../../assets/images/cxf_pic/elmo/elmo_pic4.jpg)
 其中，$h_{k,0}^{LM}$是token layer，$h_{k,j}^{KM}=[\overrightarrow{h}_{k,j}^{KM};\overleftarrow{h}_{k,j}^{KM}]$表示每一个biLM layer
 
 在下游任务的使用中，ELMO是将R中的所有层压缩在一起形成一个单独的向量$ELMO_k=E(R_k,\Theta_e)$,最简单的情况下，仅使用top layer，即$E(R_k)=h_{k,L}{LM}$
 
 更一般地，我们计算所有biLM层的任务特定权重：
-![elmo公式5](C:\Users\123\Desktop\learning\elmo_pic5.jpg)
+![avatar](../../assets/images/cxf_pic/elmo/elmo_pic5.jpg)
 其中$s^task$是softmax归一化权重，常量参数$\gamma^task$是任务模型对整个ELMO向量的缩放，$\gamma$在优化过程中有着实际的意义，由于每个biLM层有不同的分布，某些情况下，它还有助于在加权之前对每个biLM进行归一化。
 
 ### 2.3 Using elmo for supervised NLP tasks
@@ -44,17 +50,17 @@ ELMO中的biLM是由两层biLSTM构成，第一层到第二层使用残差连接
 
 ## 3.Evaluation and Analysis
 以下是ELMO在QA,Textual entailment，Semanic role labeling, Coreference resolution, NER 和 Sentiment analysis上的结果,基本上每个任务都有明显的改善
-![elmo公式6](C:\Users\123\Desktop\learning\elmo_pic6.jpg)
+![avatar](../../assets/images/cxf_pic/elmo/elmo_pic6.jpg)
 
 使用所有层和顶层的对比
-![elmo公式7](C:\Users\123\Desktop\learning\elmo_pic7.jpg)
+![avatar](../../assets/images/cxf_pic/elmo/elmo_pic7.jpg)
 较大的$\lambda$(如$\lambda=1$)将加权函数变为基于层的简单平均值，而较小的$lambda$(如$\lambda=0.001$)允许层权重变化
 
 ELMO放在输入层和输出层的对比
-![elmo公式8](C:\Users\123\Desktop\learning\elmo_pic8.jpg)
+![avatar](../../assets/images/cxf_pic/elmo/elmo_pic8.jpg)
 
 What information is captured by the biLM’s representations?
-![elmo公式9](C:\Users\123\Desktop\learning\elmo_pic9.jpg)
+![avatar](../../assets/images/cxf_pic/elmo/elmo_pic9.jpg)
 从图上可知，对于单词play，glove返回的近义词包括动词(played,playing)，名词(player,game)等词，主要是运动方面的词语。elmo返回的结果可以知道biLM能够在表示词语嵌入时考虑到context的信息(第一个例子里的play名词，表示击球，第二个例子中play也是名词，表示表演)。biLM能够同时区分语法和语义。
 
 ## 4.实际使用
